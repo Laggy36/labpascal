@@ -1,0 +1,22 @@
+var
+k, x, p: integer;
+begin
+writeLn('vvedite chislo');
+readln(k);
+x:=0;
+while  k<>0 do
+begin
+k:=k div 10;
+x:=x+1;
+end; 
+p:=x mod 2;
+if p=0 then
+x:=x div 2
+else
+begin
+x:=x div 2;
+x:=x+1;
+end;
+writeln(x);
+readln(x);
+end.
